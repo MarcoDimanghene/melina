@@ -1,12 +1,28 @@
-import { LogoStyled, NavWrapperStyled } from "./NavbarStyled";
-import Logo from "../../Image/1_Logo Negro.png";
+import { ImgStyled, LinkbtnStyled, LinksConteinerStyled, LinksStyled, LogoStyled, NavWrapperStyled, NavbarHeaderStyked } from "./NavbarStyled";
+import Logo from "../../Image/4_Logo Blanco.png";
 
 function  Navbar() {
     return (
-        <NavWrapperStyled>
-            <LogoStyled> <img src={Logo} alt="logo" /> </LogoStyled>
-            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab officiis voluptas iure necessitatibus eius voluptatem accusantium, eaque odio quae autem illo vitae saepe nulla earum itaque repellendus perferendis doloribus eos.</h1>
-        </NavWrapperStyled>
+        <NavbarHeaderStyked>
+            <NavWrapperStyled>
+                <LogoStyled> <ImgStyled src={Logo} alt="logo" /> </LogoStyled>
+                <LinksConteinerStyled>
+                    <LinksStyled>
+                        <LinkbtnStyled>INICIO</LinkbtnStyled>
+                    </LinksStyled>
+                    <LinksStyled>
+                        <LinkbtnStyled>INFORMACIÓN</LinkbtnStyled>
+                    </LinksStyled>
+                    <LinksStyled>
+                        <LinkbtnStyled>SERVICIOS</LinkbtnStyled>
+                    </LinksStyled>
+                    <LinksStyled>
+                        <LinkbtnStyled>CONTACTO</LinkbtnStyled>
+                    </LinksStyled>
+                </LinksConteinerStyled>
+            </NavWrapperStyled>
+        </NavbarHeaderStyked>
+        
     )
 }
 

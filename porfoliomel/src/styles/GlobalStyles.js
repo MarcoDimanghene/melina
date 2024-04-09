@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyles = createGlobalStyle `
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
     :root {
 
     --blue: #312783;
@@ -18,23 +20,14 @@ export const GlobalStyles = createGlobalStyle `
     margin: 0;
     padding: 0;
     background: var(--gradient);
-    font-family: 'Onest Variable', sans-serif;
+    background-repeat: no-repeat;
     color: white;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden;
-    
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
     }
 
-    a {
-    text-decoration: none;
-    }
 
-    a:visited {
-    color: white;
-    }
-
-    li {
-    list-style: none;
-    }
 
 `;  
